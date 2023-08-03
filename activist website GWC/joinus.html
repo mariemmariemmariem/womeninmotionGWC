@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Women in Motion</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script>
+      function handleSignUp() {
+        var fn = document.getElementById("first_name").value;
+        var ln = document.getElementById("last_name").value;
+        var zc = document.getElementById("zip_code").value;
+        var email = document.getElementById("sign_up_email").value;
+        var phone = document.getElementById("phone").value;
+
+        if (
+          fn === "" ||
+          ln === "" ||
+          zc === "" ||
+          email === "" ||
+          phone === ""
+        ) {
+          alert("Please verify you filled all inputs");
+        } else {
+          document.getElementById("join-us-sign-up").style.display = "none";
+          document.getElementById("success-message").style.display = "block";
+        }
+      }
+    </script>
+    <style>
+      body {
+        text-align: center;
+        color: black;
+        background-color: #8f0d57;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+        <li><a href="Success Stories.html">Success Stories</a></li>
+        <a href="joinus.html"><button>Join Us</button></a>
+      </ul>
+    </nav>
+    <div class="join-us-container">
+      <h1>Join Our movement</h1>
+      <div class="join-our-movement-flex-container">
+        <div class="join-our-movement-flex-item">
+          <img
+            src="photos/join us pic.jpg"
+            alt="a univerfity female theletes holding a paper in it: women in sport to encourge female theletes on women's day"
+          />
+        </div>
+        <div class="join-our-movement-flex-item">
+          <p>
+            Join a movement for gender equality in sports that is making a
+            difference for women athletes and our allies. When you join Women in
+            Motion, we'll provide you with meaningful actions you can take to
+            advocate for gender equality in sports. In a time when women's
+            representation is underrepresented and stereotypes persist, we're
+            not only raising awareness - we're empowering women to shatter
+            barriers and shape the future of sports. Join Women in Motion by
+            signing up today! (There is no cost to become a Women in Motion
+            member)
+          </p>
+        </div>
+      </div>
+      <div class="join-us-sign-up">
+        <h1>Sign Up</h1>
+        <label for="first-name">First Name :</label>
+        <input id="first_name" type="text" /><br />
+        <label for="last-name">Last Name :</label>
+        <input id="last_name" type="text" /><br />
+        <label for="email">Email Address:</label>
+        <input id="sign_up_email" type="email" /><br />
+        <label for="Zip_Code">Zip Code :</label>
+        <input id="zip_code" type="text" /><br />
+        <label for="Mobile_Phone">Mobile Phone :</label>
+        <input id="phone" type="text" /><br />
+        <p>
+          By taking action, you will also receive periodic communications from
+          Women In Motion. By providing your mobile number you consent to
+          receive cell phone and text communications from Women In Motion and
+          its affiliated entities concerning news and action opportunities.
+          Message and data rates may apply.
+        </p>
+        <button onclick="handleSignUp()">Sign Up</button>
+      </div>
+    </div>
+    <footer class="flex-container">
+      <div class="flex-item">
+        <h1>About Us</h1>
+        <a href="About Us.html">Mission Statement</a><br />
+        <a href="About Us.html">Why it Matters</a><br />
+        <a href="About Us.html">Our Goals</a><br />
+        <a href="About Us.html">Join Us</a><br />
+      </div>
+      <div class="flex-item">
+        <h1>Articles</h1>
+        <a href="Article.html">first article</a><br />
+      </div>
+      <div class="flex-item">
+        <h1>Success Stories</h1>
+        <a href="Success Stories.html">Africa</a><br />
+        <a href="Success Stories.html">Asia</a><br />
+        <a href="Success Stories.html">North America</a><br />
+        <a href="Success Stories.html">South America</a><br />
+        <a href="Success Stories.html">Australia</a><br />
+        <a href="Success Stories.html">Europe</a><br />
+        <a href="Success Stories.html">Antarctica</a><br />
+      </div>
+      <div class="flex-item contact-section" id="contact-section">
+        <h1>Contact Us</h1>
+        <label for="eamil">Email</label>
+        <input type="email" id="email" /><br />
+        <label for="message">message</label>
+        <textarea> write your message ...</textarea>
+        <button id="submit">submit</button>
+      </div>
+    </footer>
+  </body>
+</html>
